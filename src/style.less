@@ -5,13 +5,6 @@
  *
 */
 
-// Google Fonts
-@import (inline) '../dist/fonts.css';
-
-// Variables, Mixins
-@import 'variables';
-@import 'mixins';
-
 // INSPINIA Theme Elements
 @import 'typography';
 @import 'navigation';
@@ -32,9 +25,6 @@
 // RTL Support
 @import 'rtl';
 
-// For demo only - config box style
-@import 'theme-config';
-
 // INSPINIA Skins
 @import 'skins';
 @import 'md-skin';
@@ -45,18 +35,3 @@
 // Custom style
 // Your custom style to override base style
 @import 'custom';
-
-// Clear layout on print mode
-@media print {
-  nav.navbar-static-side {
-    display: none;
-  }
-
-  body {
-    overflow: visible !important;
-  }
-
-  #page-wrapper {
-    margin: 0px;
-  }
-}

@@ -6,7 +6,7 @@
   "scripts": {
     "lint": "lesshint src/",
     "clean": "rimraf dist",
-    "compile": "lessc src/style.less dist/inspinia.css",
+    "compile": "lessc src/main.less dist/inspinia.css",
     "copy:fonts": "node ./node_modules/.bin/google-webfonts < fonts.list --out-base-dir dist",
     "copy:patterns": "copy \"src/patterns/**/*\" dist/patterns/",
     "prebuild": "npm-run-all lint clean",

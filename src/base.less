@@ -1,18 +1,5 @@
-body {
-  background-color: #2f4050;
-  color: @text-color;
-  font-family: 'open sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  font-size: 13px;
-  overflow-x: hidden;
-}
-
-html,
-body {
-  height: 100%;
-}
-
-body.full-height-layout #wrapper,
-body.full-height-layout #page-wrapper {
+.full-height-layout #wrapper,
+.full-height-layout #page-wrapper {
   height: 100%;
 }
 
@@ -20,11 +7,11 @@ body.full-height-layout #page-wrapper {
   min-height: auto;
 }
 
-body.boxed-layout {
+.boxed-layout {
   background: @boxed-backgound;
 }
 
-body.boxed-layout #wrapper {
+.boxed-layout #wrapper {
   -moz-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
   -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
   background-color: #2f4050;
@@ -275,21 +262,21 @@ ol.unstyled {
   z-index: 1000;
 }
 
-body.mini-navbar .footer.fixed,
-body.body-small.mini-navbar .footer.fixed {
+.mini-navbar .footer.fixed,
+.body-small.mini-navbar .footer.fixed {
   margin: 0px 0px 0px 70px;
 }
 
-body.mini-navbar.canvas-menu .footer.fixed,
-body.canvas-menu .footer.fixed {
+.mini-navbar.canvas-menu .footer.fixed,
+.canvas-menu .footer.fixed {
   margin: 0px !important;
 }
 
-body.fixed-sidebar.body-small.mini-navbar .footer.fixed {
+.fixed-sidebar.body-small.mini-navbar .footer.fixed {
   margin: 0px 0px 0px @sidebar-width;
 }
 
-body.body-small .footer.fixed {
+.body-small .footer.fixed {
   margin-left: 0px;
 }
 
@@ -453,7 +440,7 @@ body.body-small .footer.fixed {
   font-size: 10px;
 }
 
-body.mini-navbar .branding {
+.mini-navbar .branding {
   display: none;
 }
 
@@ -1371,7 +1358,7 @@ a.close-canvas-menu:hover {
   animation: none;
 }
 
-body.fullscreen-ibox-mode {
+.fullscreen-ibox-mode {
   overflow-y: hidden;
 }
 
@@ -1397,32 +1384,32 @@ body.fullscreen-ibox-mode {
 // Bootstrap issue in 3.3.0 with modal https://github.com/twbs/bootstrap/issues/9855
 // Fix
 
-body.modal-open {
+.modal-open {
   padding-right: inherit !important;
 }
 
 // Fix modal in Safari browser
-body.modal-open .wrapper-content.animated {
+.modal-open .wrapper-content.animated {
   -webkit-animation: none;
 }
 
 // Fix for modal backdrop with animate.css
-body.modal-open .animated {
+.modal-open .animated {
   animation-fill-mode: initial;
   z-index: inherit;
 }
 
 /* Show profile dropdown on fixed sidebar */
-body.mini-navbar.fixed-sidebar .profile-element,
+.mini-navbar.fixed-sidebar .profile-element,
 .block {
   display: block !important;
 }
 
-body.mini-navbar.fixed-sidebar .nav-header {
+.mini-navbar.fixed-sidebar .nav-header {
   padding: 33px 25px;
 }
 
-body.mini-navbar.fixed-sidebar .logo-element {
+.mini-navbar.fixed-sidebar .logo-element {
   display: none;
 }
 
